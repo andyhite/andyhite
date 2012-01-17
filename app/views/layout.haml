@@ -2,7 +2,6 @@
 %html
   %head
     %title Andy Hite
-    = css :application, :media => :screen
-    = js :application
+    %link{ :rel => "stylesheet", :type => "text/css", :href => stylesheet_path('application') }
   %body
     = yield
