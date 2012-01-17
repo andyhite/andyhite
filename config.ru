@@ -8,6 +8,7 @@ require './app/application.rb'
 map '/assets' do
   environment = Sprockets::Environment.new
   environment.append_path 'vendor/twitter-bootstrap/lib'
+  environment.append_path 'vendor/twitter-bootstrap/js'
   environment.append_path 'app/assets/javascripts'
   environment.append_path 'app/assets/stylesheets'
   environment.append_path 'app/assets/images'

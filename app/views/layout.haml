@@ -4,5 +4,13 @@
     %title Andy Hite
     %link{ :rel => "stylesheet", :type => "text/css", :href => stylesheet_path('application') }
   %body
+    - if flash.has_key?(:modal)
+      = haml :'shared/modal', :locals => { :content => flash.delete(:modal) }
     .container
+      %header
+        %h1 Andrew Hite
+        %p I'm a web and mobile developer with over seven years of experience building websites and applications. I love building things and working with smart people.
       = yield
+      .well
+        %p= Rinku.auto_link("This website and resume were built using the wonderfully elegant Sinatra framework, Twitter Bootstrap, and a few hours of my time. If you're interested in the source code, it's available at http://github.com/andyhite/andyhite", :all, "target='_blank'")
+    %script{ :src => javascript_path('application'), :type => "text/javascript" }

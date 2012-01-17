@@ -1,0 +1,8 @@
+.modal.fade
+  .modal-header
+    %a.close.js-dismiss{ :href => "#" } x
+    %h3= content[:header]
+  .modal-body
+    %p= content[:body]
+  .modal-footer
+    %a.btn.primary.js-dismiss{ :href => "#" } Close

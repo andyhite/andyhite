@@ -1,0 +1,24 @@
+%ul.breadcrumb
+  %li
+    %a{ :href => '/resume' } Resume
+    %span.divider /
+  %li.active
+    %a{ :href => '#' } Contact
+
+.row
+  .span3
+    %h2 Contact Andrew
+    %p If you would like to get in touch with me for any reason, please fill out this form and I'll get back to you ASAP.
+  .span6
+    %form{ :action => "/contact", :method => :post }
+      %label{ :for => "contact_name" } Your Name
+      %input.span6{ :type => "text", :name => "contact[name]", :id => "contact_name" }
+
+      %label{ :for => "contact_email" } Your E-mail Address
+      %input.span6{ :type => "text", :name => "contact[email]", :id => "contact_email" }
+
+      %label{ :for => "contact_message" } Your Message
+      %textarea.span6{ :name => "contact[message]", :id => "contact_message", :rows => 6 }
+
+      %fieldset.form-actions
+        %input.btn.primary{ :type => "submit", :name => "submit", :id => "submit", :value => "Send It!" }
