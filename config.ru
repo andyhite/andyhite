@@ -10,6 +10,7 @@ map '/assets' do
   environment.append_path 'vendor/twitter-bootstrap/lib'
   environment.append_path 'app/assets/javascripts'
   environment.append_path 'app/assets/stylesheets'
+  environment.append_path 'app/assets/images'
   Sprockets::Helpers.environment = environment
   run environment
 end

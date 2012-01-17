@@ -1,0 +1,71 @@
+--- 
+:languages: 
+- :name: Ruby
+  :link: http://ruby-lang.org
+- :name: Objective-C
+  :link: http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html
+:frameworks: 
+- :name: Rails
+  :link: http://rubyonrails.org
+- :name: iOS
+  :link: http://apple.com/ios/
+- :name: Sinatra
+  :link: http://sinatrarb.com
+:others: 
+- :type: NoSQL Data Stores
+  :examples: 
+  - :name: MongoDB
+    :link: http://mongodb.org
+  - :name: CouchDB
+    :link: http://couchdb.apache.org
+  - :name: Cassandra
+    :link: http://cassandra.apache.org
+- :type: Relational Databases
+  :examples: 
+  - :name: MySQL
+    :link: http://mysql.com
+  - :name: PostgreSQL
+    :link: http://postgresql.org
+  - :name: SQLite
+    :link: http://sqlite.org
+- :type: Testing Frameworks
+  :examples: 
+  - :name: RSpec
+    :link: http://rspec.info
+  - :name: Cucumber
+    :link: http://cukes.info
+  - :name: Test::Unit
+    :link: http://test-unit.rubyforge.org
+- :type: Fixture Replacements
+  :examples: 
+  - :name: FactoryGirl
+    :link: http://thoughtbot.com/community
+  - :name: Machinist
+    :link: http://github.com/notahat/machinist
+- :type: JavaScript Frameworks
+  :examples: 
+  - :name: jQuery
+    :link: http://jquery.com
+  - :name: Backbone.js
+    :link: http://documentcloud.github.com/backbone
+- :type: CSS Frameworks
+  :examples: 
+  - :name: Twitter Bootstrap
+    :link: http://twitter.github.com/bootstrap
+  - :name: Blueprint
+    :link: http://blueprintcss.org
+- :type: CSS Extensions
+  :examples: 
+  - :name: SASS
+    :link: http://sass-lang.com
+  - :name: LESS
+    :link: http://lesscss.org
+- :type: Templating
+  :examples: 
+  - :name: HAML
+    :link: http://haml-lang.com
+  - :name: ERB
+    :link: http://corelib.rubyonrails.org/classes/ERB.html
+  - :name: Mustache
+    :link: http://mustache.github.com
+

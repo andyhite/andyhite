@@ -1,0 +1,85 @@
+%header
+  %h1 Andrew Hite
+  %p I'm a web and mobile developer with over seven years of experience building websites and applications. I love building things and working with smart people.
+
+%h2
+  Technologies
+  %small Stuff I like to make things with
+
+.tagline
+  %img{ :src => image_path("btn-now_with_buzzwords.png") }
+
+%hr
+
+.row
+  - @technologies[:languages].each do |language|
+    .span6
+      %a.tag.xlarge{ :href => language[:link], :target => "_blank" }
+        = language[:name]
+
+.row
+  - @technologies[:frameworks].each do |framework|
+    .span4
+      %a.tag.large{ :href => framework[:link], :target => "_blank" }
+        = framework[:name]
+
+- @technologies[:others].in_groups_of(4, false) do |others|
+  .row
+    - others.each do |other|
+      .span3
+        %span.tag.medium
+          = other[:type]
+          %small
+            - other[:examples].each do |example|
+              %a{ :href => example[:link], :target => "_blank" }
+                = example[:name]
+
+%br
+
+%h2
+  Experience
+  %small Places I've worked at
+
+%hr
+
+- @experience.each do |experience|
+  %h3= experience[:position]
+  %h4.pull-right= experience[:time_period]
+  %h4
+    = experience[:company]
+    %small
+      %a{ :href => experience[:link], :target => "_blank" }= experience[:link].gsub('http://', '')
+  %br
+  - experience[:description].split("\n").each do |paragraph|
+    %p= paragraph
+  - unless @experience.last == experience
+    %hr
+
+%br
+%br
+
+%h2
+  Links
+  %small Where to find me
+
+%hr
+
+.row
+  .span4
+    %span.tag.medium
+      GitHub
+      %small
+        %a{ :href => "http://github.com/andyhite", :target => "_blank" } andyhite
+  .span4
+    %span.tag.medium
+      Twitter
+      %small
+        %a{ :href => "http://twitter.com/andyhite", :target => "_blank" } andyhite
+  .span4
+    %span.tag.medium
+      Facebook
+      %small
+        %a{ :href => "http://facebook.com/andyhite", :target => "_blank" } andyhite
+
+.well
+  %p= Rinku.auto_link("This website and resume were built using the wonderfully elegant Sinatra framework, Twitter Bootstrap, and a few hours of my time. If you're interested in the source code, it's available at http://github.com/andyhite/andyhite", :all, "target='_blank'")

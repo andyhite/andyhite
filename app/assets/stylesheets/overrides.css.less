@@ -1,0 +1,94 @@
+// Mixins
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+// Overrides
+
+body {
+  background: url(../assets/bg.gif) repeat-x top;
+}
+
+header {
+  height: 129px;
+  margin-bottom: 20px;
+  padding: 40px 0;
+  position: relative;
+  h1 {
+    font-size: 45px;
+    line-height: 1em;
+    margin-bottom: 0.25em;
+    text-shadow: 1px 1px 0px #ffffff;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 0.25em;
+    text-shadow: 1px 1px 0px #ffffff;
+  }
+}
+
+.tagline {
+  position: relative;
+  img {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    position: absolute;
+    right: -30px;
+    top: -50px;
+  }
+}
+
+a.tag,
+span.tag {
+  .rounded-corners(10px);
+  border: 1px solid #e5e5e5;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+  small {
+    color: #dddddd;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+  &.xlarge {
+    font-size: 25px;
+    padding: 40px 20px;
+  }
+  &.large {
+    font-size: 20px;
+    padding: 20px;
+  }
+  &.medium {
+    font-size: 15px;
+    padding: 15px;
+    small {
+      color: #999999;
+    }
+  }
+  &:hover {
+    background-color: #ffffff;
+    border-color: #999999;
+    color: #333333;
+    small {
+      color: #333333;
+    }
+  }
+}
+
+.well {
+  p {
+    text-shadow: 1px 1px 0px #ffffff;
+  }
+}
