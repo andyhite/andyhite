@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "sinatra", "~> 1.3.2", :require => "sinatra/base"
+gem "sinatra", :git => "git://github.com/sinatra/sinatra.git", :require => "sinatra/base"
 gem "i18n", "~> 0.6.0"
 gem "activesupport", "~> 3.1.3", :require => "active_support"
 gem "sprockets", "~> 2.3.0"
