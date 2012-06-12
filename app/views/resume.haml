@@ -45,13 +45,27 @@
     = experience[:company]
     %small
       %a{ :href => experience[:link], :target => "_blank" }= experience[:link].gsub('http://', '')
-  %br
-  - experience[:description].split("\n").each do |paragraph|
-    %p= paragraph
+  - if experience.has_key?(:description)
+    %br
+    - experience[:description].split("\n").each do |paragraph|
+      %p= paragraph
   - unless @experience.last == experience
     %hr
 
 %br
+
+%h2
+  References
+  %small People that like me
+
+%hr
+
+%p
+  Since they probably wouldn't like having their information given out all "willy nilly", you can 
+  %a{ :href => "/contact" } contact me
+  for a list of people that will (hopefully) say nice things about me.
+
+
 %br
 
 %h2

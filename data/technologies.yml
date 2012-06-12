@@ -18,8 +18,6 @@
     :link: http://mongodb.org
   - :name: CouchDB
     :link: http://couchdb.apache.org
-  - :name: Cassandra
-    :link: http://cassandra.apache.org
 - :type: Relational Databases
   :examples: 
   - :name: MySQL

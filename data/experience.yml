@@ -1,18 +1,27 @@
 ---
+- :company: PeopleAdmin
+  :position: Application Developer
+  :time_period: February 2012 - Present
+  :link: http://peopleadmin.com
+  :description: >
+    Currently building awesome HR software for higher education. Ask me if you'd like to hear more about it!
+
 - :company: Impulse Development
   :position: Web Developer / Co-Founder
-  :time_period: January 2007 - Present
+  :time_period: January 2007 - February 2012
   :link: http://impulsedevelopment.com
   :description: >
-    In the five years since Impulse Development was founded, I have overseen the development of numerous web applications and websites for clients located in El Paso and across the United States. Over the course of my employment, Impulse Development has established itself as one of the top web development agencies in the region, and the only agency specializing in rapid development with Ruby on Rails.
+    In the five years that I spent at Impulse I oversaw the development of numerous web applications and websites for clients located in El Paso and across the United States. Over the course of my employment, Impulse Development established itself as one of the top web development agencies in the region, and the only agency specializing in rapid development with Ruby on Rails.
     
-    As lead developer, I am in charge of all front-end and back-end application / website development. 
+    As lead developer, I was in charge of all front-end and back-end application / website development. 
+
 - :company: Stanton Street Technology Group
   :position: Web Developer
   :time_period: August 2005 - January 2007
   :link: http://stantonstreet.com
   :description: >
     As a web developer at Stanton Street Technology Group I was responsible for building client websites in a LAMP environment, with emphasis on front-end development with semantic HTML and CSS. As a junior developer I was often tasked with other jobs such as server administration, search engine optimization, development of internal applications, and client support.
+
 - :company: First Light Federal Credit Union
   :position: Computer Operations / Helpdesk Specialist
   :time_period: August 2003 - August 2005
