@@ -1,10 +1,16 @@
 require 'yaml'
 require 'active_support/core_ext/array/grouping'
 
+Airbrake.configure do |config|
+  config.api_key = ENV['AIRBRAKE_API_KEY']
+end
+
 class Application < Sinatra::Base
   include Sprockets::Helpers
-  enable :sessions
   register Sinatra::Flash
+  use Airbrake::Rack
+  enable :sessions
+  enable :raise_errors
 
   ENV['MAIL_TO_ADDRESS'] ||= "andrew@andrew-hite.com"
 
