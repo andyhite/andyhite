@@ -39,7 +39,13 @@
 %hr
 
 - @experience.each do |experience|
-  %h3= experience[:position]
+  - if experience[:previous_position].present?
+    %h3
+      = experience[:position]
+      %small== Previously: #{experience[:previous_position]}
+  - else
+    %h3= experience[:position]
+
   %h4.pull-right= experience[:time_period]
   %h4
     = experience[:company]
