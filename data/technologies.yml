@@ -2,13 +2,13 @@
 :languages: 
 - :name: Ruby
   :link: http://ruby-lang.org
-- :name: Objective-C
-  :link: http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html
+- :name: Javascript
+  :link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 :frameworks: 
 - :name: Rails
   :link: http://rubyonrails.org
-- :name: iOS
-  :link: http://apple.com/ios/
+- :name: Backbone.js
+  :link: http://backbonejs.org/
 - :name: Sinatra
   :link: http://sinatrarb.com
 :others: 
@@ -50,8 +50,8 @@
   :examples: 
   - :name: Twitter Bootstrap
     :link: http://twitter.github.com/bootstrap
-  - :name: Blueprint
-    :link: http://blueprintcss.org
+  - :name: Bourbon + Neat
+    :link: http://neat.bourbon.io/
 - :type: CSS Extensions
   :examples: 
   - :name: SASS
@@ -64,6 +64,6 @@
     :link: http://haml-lang.com
   - :name: ERB
     :link: http://corelib.rubyonrails.org/classes/ERB.html
-  - :name: Mustache
-    :link: http://mustache.github.com
+  - :name: Handlebars
+    :link: http://handlebarsjs.com/
 
