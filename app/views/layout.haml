@@ -13,4 +13,10 @@
       = yield
       .well
         %p= Rinku.auto_link("This website and resume were built using the wonderfully elegant Sinatra framework, Twitter Bootstrap, and a few hours of my time. If you're interested in the source code, it's available at http://github.com/andyhite/andyhite", :all, "target='_blank'")
+        %p If you like what you see and would like to to use it for your own resume, feel free. If you feel so inclined, please leave a small donation - it's very much appreciated, and will go towards purchasing only the finest pints of beer, which I will drink in your honor.
+
+      .donate
+        :plain
+          <a class="coinbase-button" data-code="6939d91698845aef4ede60c38cad7827" data-button-style="donation_small" href="https://coinbase.com/checkouts/6939d91698845aef4ede60c38cad7827">Donate Bitcoins</a>
+          <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
     %script{ :src => javascript_path('application'), :type => "text/javascript" }
