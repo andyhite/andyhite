@@ -12,6 +12,8 @@ class Application < Sinatra::Base
   enable :sessions
   enable :raise_errors
 
+  set :public_dir, 'public'
+
   ENV['MAIL_TO_ADDRESS'] ||= "andrew@andrew-hite.com"
 
   get "/" do
